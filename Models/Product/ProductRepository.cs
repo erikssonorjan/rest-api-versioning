@@ -10,14 +10,5 @@
                 Name = "Product-" + id
             };
         }
-
-        public Product GetExtendedProduct(uint id)
-        {
-            return new Product
-            {
-                Id = id,
-                Name = "ProductExtended-" + id
-            };
-        }
     }
 }
