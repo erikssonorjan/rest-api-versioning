@@ -22,11 +22,7 @@
         [Route("{id}")]
         public Order GetOrder(string id)
         {
-            var order = _ordersRepository.GetOrder(id);
-
-            order.Reference = "From version 1";
-
-            return order;
+            return _ordersRepository.GetOrder(id);
         }
     }
 }
