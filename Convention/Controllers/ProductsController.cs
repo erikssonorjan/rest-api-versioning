@@ -17,7 +17,6 @@
             _productRepository = productRepository;
         }
 
-        [HttpGet]
         public Product GetProduct(uint id)
         {
             return _productRepository.GetProduct(id);
