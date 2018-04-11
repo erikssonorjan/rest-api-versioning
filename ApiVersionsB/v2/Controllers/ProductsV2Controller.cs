@@ -1,19 +1,19 @@
-﻿namespace ApiVersionsB.Controllers.v1
+﻿namespace ApiVersionsB.v2.Controllers
 {
     using Domain.Product;
     using System.Web.Http;
 
-    [RoutePrefix("api/v1/products")]
-    public class ProductsV1Controller : ApiController
+    [RoutePrefix("api/v2/products")]
+    public class ProductsV2Controller : ApiController
     {
         private readonly ProductRepository _productRepository;
 
-        public ProductsV1Controller()
+        public ProductsV2Controller()
             : this(new ProductRepository())
         {
         }
 
-        public ProductsV1Controller(ProductRepository productRepository)
+        public ProductsV2Controller(ProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
@@ -24,7 +24,7 @@
         {
             var product = _productRepository.GetProduct(id);
 
-            product.Name += " - from version 1";
+            product.Name += " - from version 2";
 
             return product;
         }
