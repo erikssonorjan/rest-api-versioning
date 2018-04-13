@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 ApiVersionsA", "ApiVersi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 ApiVersionsB", "ApiVersionsB\04 ApiVersionsB.csproj", "{AF580F0F-2F00-4865-B65A-F051238B9BF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 ApiVersionsC", "ApiVersionsC\05 ApiVersionsC.csproj", "{812B2BF0-20AE-403A-81A9-412E49C0D70C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AF580F0F-2F00-4865-B65A-F051238B9BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF580F0F-2F00-4865-B65A-F051238B9BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF580F0F-2F00-4865-B65A-F051238B9BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
