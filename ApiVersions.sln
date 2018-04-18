@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 ApiVersionsB", "ApiVersi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 ApiVersionsC", "ApiVersionsC\05 ApiVersionsC.csproj", "{812B2BF0-20AE-403A-81A9-412E49C0D70C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 ApiVersionsD", "ApiVersionsD\06 ApiVersionsD.csproj", "{7BFE5561-D700-4F73-A532-9E321D14EE7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{812B2BF0-20AE-403A-81A9-412E49C0D70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFE5561-D700-4F73-A532-9E321D14EE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFE5561-D700-4F73-A532-9E321D14EE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFE5561-D700-4F73-A532-9E321D14EE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFE5561-D700-4F73-A532-9E321D14EE7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
