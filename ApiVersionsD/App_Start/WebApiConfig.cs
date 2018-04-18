@@ -1,8 +1,10 @@
 ﻿namespace ApiVersionsD
 {
+    using ApiVersionsD.Controllers;
     using Microsoft.Web.Http;
     using Microsoft.Web.Http.Routing;
     using Microsoft.Web.Http.Versioning;
+    using Microsoft.Web.Http.Versioning.Conventions;
     using System.Web.Http;
 
     public static class WebApiConfig
@@ -38,6 +40,12 @@
                     new QueryStringApiVersionReader("ver"),         // svc?ver=2.0
                     new HeaderApiVersionReader("X-Api-Version"),
                     new MediaTypeApiVersionReader("ver"));          // Content-Type: application/json;ver=2.0
+
+                o.Conventions.Controller<ProductsController>()
+                    .HasApiVersion(1)
+                    .HasApiVersion(2)
+                    .Action(c => c.GetProductV1(default(int))).MapToApiVersion(1)
+                    .Action(c => c.GetProductV2(default(int))).MapToApiVersion(2);
             });
         }
     }
