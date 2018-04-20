@@ -4,8 +4,8 @@
     using Microsoft.Web.Http;
     using System.Web.Http;
 
-    [ApiVersion("1")]
-    [ApiVersion("2")]
+    [ApiVersion(Versions.V1_0)]
+    [ApiVersion(Versions.V2_0)]
     public class OrdersController : ApiController
     {
         private readonly OrderRepository _ordersRepository;
@@ -20,14 +20,14 @@
             _ordersRepository = ordersRepository;
         }
 
-        [MapToApiVersion("1")]
+        [MapToApiVersion(Versions.V1_0)]
         [HttpGet]
         public Order GetOrderV1(string id)
         {
             return _ordersRepository.GetOrder(id);
         }
 
-        [MapToApiVersion("2")]
+        [MapToApiVersion(Versions.V2_0)]
         [HttpGet]
         public Order GetOrderV2(string id)
         {

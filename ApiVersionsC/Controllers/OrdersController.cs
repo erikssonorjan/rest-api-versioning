@@ -4,8 +4,8 @@
     using Microsoft.Web.Http;
     using System.Web.Http;
 
-    [ApiVersion("1")]
-    [ApiVersion("2")]
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [RoutePrefix("api/v{version:apiVersion}/orders")]
     public class OrdersController : ApiController
     {
@@ -21,7 +21,7 @@
             _ordersRepository = ordersRepository;
         }
 
-        [MapToApiVersion("1")]
+        [MapToApiVersion("1.0")]
         [Route("~/api/orders/{id}")]
         [Route("{id}")]
         [HttpGet]
@@ -30,7 +30,7 @@
             return _ordersRepository.GetOrder(id);
         }
 
-        [MapToApiVersion("2")]
+        [MapToApiVersion("2.0")]
         [Route("{id}")]
         [HttpGet]
         public Order GetOrderV2(string id)

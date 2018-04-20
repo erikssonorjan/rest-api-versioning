@@ -4,7 +4,7 @@
     using Microsoft.Web.Http;
     using System.Web.Http;
 
-    [ApiVersion("1")]   
+    [ApiVersion("1.0")]   
     [RoutePrefix("api/v{version:apiVersion}/products")]
     public class ProductsV1Controller : ApiController
     {

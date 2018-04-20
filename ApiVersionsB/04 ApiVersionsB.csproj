@@ -88,10 +88,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
-    <Compile Include="v1\Controllers\OrdersV1Controller.cs" />
-    <Compile Include="v1\Controllers\ProductsV1Controller.cs" />
-    <Compile Include="v2\Controllers\OrdersV2Controller.cs" />
-    <Compile Include="v2\Controllers\ProductsV2Controller.cs" />
+    <Compile Include="v1_0\Controllers\OrdersV1_0Controller.cs" />
+    <Compile Include="v1_0\Controllers\ProductsV1_0Controller.cs" />
+    <Compile Include="v2_0\Controllers\OrdersV2_0Controller.cs" />
+    <Compile Include="v2_0\Controllers\ProductsV2_0Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

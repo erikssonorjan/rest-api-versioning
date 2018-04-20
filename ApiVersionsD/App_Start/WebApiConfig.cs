@@ -42,10 +42,10 @@
                     new MediaTypeApiVersionReader("ver"));          // Content-Type: application/json;ver=2.0
 
                 o.Conventions.Controller<ProductsController>()
-                    .HasApiVersion(1)
-                    .HasApiVersion(2)
-                    .Action(c => c.GetProductV1(default(int))).MapToApiVersion(1)
-                    .Action(c => c.GetProductV2(default(int))).MapToApiVersion(2);
+                    .HasApiVersion(1, 0)
+                    .HasApiVersion(2, 0)
+                    .Action(c => c.GetProductV1(default(int))).MapToApiVersion(1, 0)
+                    .Action(c => c.GetProductV2(default(int))).MapToApiVersion(2, 0);
             });
         }
     }

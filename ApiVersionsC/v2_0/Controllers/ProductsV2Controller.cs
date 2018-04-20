@@ -1,9 +1,11 @@
-﻿namespace ApiVersionsA.v2.Controllers
+﻿namespace ApiVersionsC.v2.Controllers
 {
     using Domain.Product;
+    using Microsoft.Web.Http;
     using System.Web.Http;
 
-    [RoutePrefix("api/v2/products")]
+    [ApiVersion("2.0")]
+    [RoutePrefix("api/v{version:apiVersion}/products")]
     public class ProductsV2Controller : ApiController
     {
         private readonly ProductRepository _productRepository;
@@ -17,10 +19,10 @@
         {
             _productRepository = productRepository;
         }
-
-        [HttpGet]
+                
         [Route("{id}")]
-        public Product GetProduct(uint id)
+        [HttpGet]
+        public Product GetProductV2(uint id)
         {
             var product = _productRepository.GetProduct(id);
 
