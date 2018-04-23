@@ -20,12 +20,12 @@
             config.Routes.MapHttpRoute(
                 "VersionedQueryString",
                 "api/{controller}/{Id}",
-                defaults: null);
+                defaults: new { id = RouteParameter.Optional });
 
             config.Routes.MapHttpRoute(
                 "VersionedUrl",
                 "api/v{apiVersion}/{controller}/{Id}",
-                defaults: null,
+                defaults: new { id = RouteParameter.Optional },
                 constraints: new { apiVersion = new ApiVersionRouteConstraint() });
 
             config.AddApiVersioning(o =>
