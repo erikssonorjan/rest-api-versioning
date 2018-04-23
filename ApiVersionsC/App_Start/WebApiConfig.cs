@@ -16,19 +16,24 @@
 
             // Web API routes
 
+            //
+            // No magic! Routes are used to resolve versions.
+            //
+
             var constraintResolver = new DefaultInlineConstraintResolver
             {
                 ConstraintMap = { ["apiVersion"] = typeof(ApiVersionRouteConstraint) }
+                // E.g. [RoutePrefix("api/v{version:apiVersion}/resource")]
             };
 
             config.MapHttpAttributeRoutes(constraintResolver);
 
             config.AddApiVersioning(o =>
             {
-                o.AssumeDefaultVersionWhenUnspecified = true;
-
                 o.DefaultApiVersion = new ApiVersion(1, 0);
-
+                
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                
                 o.ReportApiVersions = true;
 
                 o.ApiVersionReader = ApiVersionReader.Combine(

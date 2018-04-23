@@ -1,4 +1,4 @@
-﻿namespace ApiVersionsB.v1.Controllers
+﻿namespace ApiVersionsB.v1_0.Controllers
 {
     using Domain.Product;
     using System.Web.Http;

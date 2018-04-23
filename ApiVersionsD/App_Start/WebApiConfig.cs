@@ -30,10 +30,10 @@
 
             config.AddApiVersioning(o =>
             {
-                o.AssumeDefaultVersionWhenUnspecified = true;
-
                 o.DefaultApiVersion = new ApiVersion(1, 0);
 
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                
                 o.ReportApiVersions = true;
 
                 o.ApiVersionReader = ApiVersionReader.Combine(

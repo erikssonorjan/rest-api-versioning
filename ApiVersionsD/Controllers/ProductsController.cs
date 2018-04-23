@@ -1,7 +1,6 @@
 ﻿namespace ApiVersionsD.Controllers
 {
     using Domain.Product;
-    using Microsoft.Web.Http;
     using System.Web.Http;
 
     public class ProductsController : ApiController
