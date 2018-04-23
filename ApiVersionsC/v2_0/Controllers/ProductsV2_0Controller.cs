@@ -1,4 +1,4 @@
-﻿namespace ApiVersionsC.v2.Controllers
+﻿namespace ApiVersionsC.v2_0.Controllers
 {
     using Domain.Product;
     using Microsoft.Web.Http;
@@ -6,16 +6,16 @@
 
     [ApiVersion("2.0")]
     [RoutePrefix("api/v{version:apiVersion}/products")]
-    public class ProductsV2Controller : ApiController
+    public class ProductsV2_0Controller : ApiController
     {
         private readonly ProductRepository _productRepository;
 
-        public ProductsV2Controller()
+        public ProductsV2_0Controller()
             : this(new ProductRepository())
         {
         }
 
-        public ProductsV2Controller(ProductRepository productRepository)
+        public ProductsV2_0Controller(ProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
