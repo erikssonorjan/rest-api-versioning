@@ -2,7 +2,6 @@
 {
     using Microsoft.Web.Http;
     using Microsoft.Web.Http.Routing;
-    using Microsoft.Web.Http.Versioning;
     using System.Web.Http;
     using System.Web.Http.Routing;
 
@@ -35,9 +34,6 @@
                 o.AssumeDefaultVersionWhenUnspecified = true;
                 
                 o.ReportApiVersions = true;
-
-                o.ApiVersionReader = ApiVersionReader.Combine(
-                    new UrlSegmentApiVersionReader());
             });
         }
     }
