@@ -1,0 +1,1404 @@
+{
+	"info": {
+		"_postman_id": "dcdcb4c6-b360-449f-8ccb-bdc8a5dbcd0a",
+		"name": "API-versioner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f78da6ca-e200-4a0b-bc14-7d78b4ab13d2",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8801/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8801",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7b9eaf7f-4398-4aca-b08b-88c6ff958bd9",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8802/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8802",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "03",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "54261480-7a28-4d3d-ab0c-7c89c88be268",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8803/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8803",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1da03664-e81d-4fc2-94db-6a2c593d2856",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8803/api/v1.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8803",
+							"path": [
+								"api",
+								"v1.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5848ad08-d237-4731-9435-e9d8d0b63bf0",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8803/api/v2.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8803",
+							"path": [
+								"api",
+								"v2.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "04",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f09fd24c-ad6c-4e2b-8303-11234366e579",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6fcdecca-ee86-4366-b91e-35d76e324f2c",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/v1.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"v1.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "090ab6d3-d7eb-4fd4-b646-3482c8c5f6e0",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/v2.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"v2.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fabc561d-bd1f-41aa-97e8-420ec8b1dff8",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "41f299c7-8094-4339-babb-0eddc95a276d",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/v1.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"v1.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b6f6fbb7-f1e1-4ef1-9be8-b7947e727a26",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8804/api/v2.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8804",
+							"path": [
+								"api",
+								"v2.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "05",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fdc6aeeb-78a0-433c-b869-fde4ed605123",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bb20528b-320b-4810-b87e-e411cda7eab6",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/v1.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"v1.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "742fd160-d246-442c-afc1-90b49fd75102",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/v2.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"v2.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4afc023e-e331-43e9-b02e-583c91fb235b",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b39410d5-7b1c-4d95-a660-3f9e184eb385",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/v1.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"v1.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f8672f8a-6252-4ffd-a13b-17e19857d1f0",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8805/api/v2.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8805",
+							"path": [
+								"api",
+								"v2.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "06",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c718fc59-b2aa-4651-849c-525ec709b01a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c13ca2bd-5343-4714-80a5-35da20140159",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/v1.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"v1.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4659391c-6e59-4a9f-b63a-90e7e3e4c2bc",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/v2.0/products/1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"v2.0",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "146efd47-ba82-4ab5-8547-57760674878f",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9cbde669-02dc-437c-9bc2-82bce4f1f916",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/v1.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"v1.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "66c58b16-9a89-4ae9-9946-4c1bb47f1dbb",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/v2.0/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"v2.0",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order querystring v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2af3a79f-9f51-47d9-8d01-9bbd11893971",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1?ver=1.0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							],
+							"query": [
+								{
+									"key": "ver",
+									"value": "1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order querystring v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "542504bf-cd4e-4d37-85b8-d9b4415f2481",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1?ver=2.0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							],
+							"query": [
+								{
+									"key": "ver",
+									"value": "2.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order header v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ad386396-2e22-4670-9a6c-6e1409241253",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Api-Version",
+								"value": "1.0"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order header v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b0bc2f19-0650-42a1-9dfd-6f88ded04df8",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Api-Version",
+								"value": "2.0"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order media type v1.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e0f25b07-492f-4783-b7c3-fc6c1f58f8ab",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 1.0\"] = postman.getResponseHeader('Api-Version') === '1.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;ver=1.0"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order media type v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50af43bc-663f-408d-b379-cecd83c46728",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;ver=2.0"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/orders/qwerty1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"orders",
+								"qwerty1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Version header v2.0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50af43bc-663f-408d-b379-cecd83c46728",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 2.0\"] = postman.getResponseHeader('Api-Version') === '2.0';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Api-Version",
+								"value": "2.0"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/versions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"versions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Version header v3.14",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33cbc489-1e40-48f7-8760-76400f835587",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"Version is 3.14\"] = postman.getResponseHeader('Api-Version') === '3.14';"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Api-Version",
+								"value": "3.14"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8806/api/versions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8806",
+							"path": [
+								"api",
+								"versions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
