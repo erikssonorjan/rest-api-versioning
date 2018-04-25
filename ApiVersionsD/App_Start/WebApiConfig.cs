@@ -41,6 +41,31 @@
                     new HeaderApiVersionReader("X-Api-Version"),
                     new MediaTypeApiVersionReader("ver"));          // Content-Type: application/json;ver=2.0
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 o.Conventions.Controller<ProductsController>()
                     .HasApiVersion(1, 0)
                     .HasApiVersion(2, 0)
