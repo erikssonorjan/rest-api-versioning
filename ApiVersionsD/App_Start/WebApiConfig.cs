@@ -65,7 +65,7 @@
 
 
 
-
+                // Use conventions for the product resources.
                 o.Conventions.Controller<ProductsController>()
                     .HasApiVersion(1, 0)
                     .HasApiVersion(2, 0)

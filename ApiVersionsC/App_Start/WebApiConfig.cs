@@ -11,6 +11,11 @@
         {
             // Web API configuration and services
 
+            //
+            // Use Microsoft.AspNet.WebApi.Versioning
+            //
+
+            // Custom filter to expose used version.
             GlobalConfiguration.Configuration.Filters.Add(new VersionInformationFilter());
 
             // Web API routes

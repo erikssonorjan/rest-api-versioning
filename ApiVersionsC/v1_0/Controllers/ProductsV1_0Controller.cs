@@ -20,7 +20,7 @@
             _productRepository = productRepository;
         }
 
-        [Route("~/api/products/{id}")]
+        [Route("~/api/products/{id}")] // Route without prefix.
         [Route("{id}")]
         [HttpGet]
         public Product GetProductV1(uint id)

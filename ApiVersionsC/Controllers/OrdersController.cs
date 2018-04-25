@@ -22,7 +22,7 @@
         }
 
         [MapToApiVersion("1.0")]
-        [Route("~/api/orders/{id}")]
+        [Route("~/api/orders/{id}")] // Route without prefix.
         [Route("{id}")]
         [HttpGet]
         public Order GetOrderV1(string id)
