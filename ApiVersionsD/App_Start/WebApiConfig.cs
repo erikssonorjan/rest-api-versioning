@@ -40,31 +40,7 @@
                     new QueryStringApiVersionReader("ver"),         // svc?ver=2.0
                     new HeaderApiVersionReader("X-Api-Version"),
                     new MediaTypeApiVersionReader("ver"));          // Content-Type: application/json;ver=2.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
                 // Use conventions for the product resources.
                 o.Conventions.Controller<ProductsController>()
                     .HasApiVersion(1, 0)
